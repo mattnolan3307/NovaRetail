@@ -109,4 +109,4 @@ def load_data(file_path="NR_dataset.xlsx"):
     df = pd.read_excel(file_path, sheet_name=0)
     
     # 1. Clean column strings
-    df.columns = [c.strip()
+    df.columns = [c.strip() for c in df.columns]
